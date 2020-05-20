@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditTextActivity">
+
+    <EditText
+        android:id="@+id/edit_text_activity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"
+        />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/edit_text_activity"
+        android:layout_marginTop="59dp"
+        android:onClick="setUpdate"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/cancel_button"
+        app:layout_constraintStart_toStartOf="@+id/edit_text_activity"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_activity" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/edit_text_activity"
+        android:layout_marginTop="59dp"
+        android:layout_toRightOf="@id/update_button"
+        android:onClick="cancelUpdate"
+        android:text="Cancle"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_text_activity"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_activity" />
+</androidx.constraintlayout.widget.ConstraintLayout>
